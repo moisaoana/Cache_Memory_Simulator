@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="603.0" style="-fx-background-color: LINEN;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.StartPageController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="137.0" layoutY="43.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Cache Memory Simulator" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="configLabel" layoutX="206.0" layoutY="104.0" style="-fx-text-fill: DARKSEAGREEN;" text="Memory configurations: ">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="simButton" layoutX="188.0" layoutY="402.0" mnemonicParsing="false" onAction="#clickSim" prefHeight="48.0" prefWidth="99.0" style="-fx-background-color: DARKSEAGREEN; -fx-text-fill: DARKSLATEGRAY;" text="SIMULATE">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="331.0" layoutY="402.0" mnemonicParsing="false" onAction="#clickReset" prefHeight="48.0" prefWidth="91.0" style="-fx-background-color: DARKSEAGREEN; -fx-text-fill: DARKSLATEGRAY;" text="RESET">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="mapLabel" layoutX="17.0" layoutY="142.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Mapping:">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mapComboBox" layoutX="113.0" layoutY="139.0" prefWidth="150.0" />
+      <Label fx:id="addressSizeLabel" layoutX="13.0" layoutY="188.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Address Size (bits):">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="nrOfBlocksLabel" layoutX="14.0" layoutY="240.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Index Size (bits):">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="blockSizeLabel" layoutX="13.0" layoutY="298.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Block Offset Size (bits):">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressSizeTextField" layoutX="187.0" layoutY="185.0" prefHeight="25.0" prefWidth="67.0" />
+      <TextField fx:id="nrOfBlocksTextField" layoutX="187.0" layoutY="237.0" prefHeight="25.0" prefWidth="67.0" />
+      <TextField fx:id="blockSizeTextField" layoutX="187.0" layoutY="295.0" prefHeight="25.0" prefWidth="67.0" />
+      <Label fx:id="emptyLabel" disable="true" layoutX="319.0" layoutY="250.0" opacity="0.98" style="-fx-text-fill: CRIMSON;" text="Some fields are missing!" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="dataSizeLabel" layoutX="17.0" layoutY="348.0" style="-fx-text-fill: DARKSLATEGRAY;" text="Data size (bytes):">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dataSizeTextField" layoutX="187.0" layoutY="345.0" prefHeight="25.0" prefWidth="67.0" />
+      <Label fx:id="incorrectLabel" layoutX="319.0" layoutY="250.0" style="-fx-text-fill: CRIMSON;" text="Incorrect input data!" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
